@@ -38,7 +38,7 @@
 
         android:title="@string/animation_left_arriving"
 
-        app:showAsAction="ifRoom"
+        app:showAsAction="never"
 
         />
 
@@ -48,7 +48,7 @@
 
         android:title="@string/animation_left_leaving"
 
-        app:showAsAction="ifRoom"
+        app:showAsAction="never"
 
         />
 
@@ -58,7 +58,7 @@
 
         android:title="@string/animation_right_arriving"
 
-        app:showAsAction="ifRoom"
+        app:showAsAction="never"
 
         />
 
@@ -68,7 +68,7 @@
 
         android:title="@string/animation_right_leaving"
 
-        app:showAsAction="ifRoom"
+        app:showAsAction="never"
 
         />
 
