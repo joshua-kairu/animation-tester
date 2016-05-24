@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Animation Tester
+
+ Utility project to test Android animations
+
+ Copyright (C) 2016 Kairu Joshua Wambugu
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see http://www.gnu.org/licenses/.
+
+ -->
+
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- Menu for the animations -->
+
+    <item
+
+        android:id="@+id/action_animation_left_arriving"
+
+        android:title="@string/animation_left_arriving"
+
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+
+        android:id="@+id/action_animation_left_leaving"
+
+        android:title="@string/animation_left_leaving"
+
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+
+        android:id="@+id/action_animation_right_arriving"
+
+        android:title="@string/animation_right_arriving"
+
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+
+        android:id="@+id/action_animation_right_leaving"
+
+        android:title="@string/animation_right_leaving"
+
+        app:showAsAction="ifRoom"
+
+        />
+
+</menu>

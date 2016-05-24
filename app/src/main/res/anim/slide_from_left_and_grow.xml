@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Animation Tester
+
+ Utility project to test Android animations
+
+ Copyright (C) 2016 Kairu Joshua Wambugu
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see http://www.gnu.org/licenses/.
+
+ -->
+
+<!-- Slides a smaller version of the view in from the left then grows it -->
+
+<set
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <!-- 0. at start -->
+    <!-- 0a. make view 50% transparent -->
+    <!-- 0b. shrink view by 80% -->
+    <!-- 0c. make the view be inside the screen at half its shorter side-->
+    <!-- 1. on move -->
+    <!-- 1a. move view from from left to center -->
+    <!-- 1b. make the view opaque -->
+    <!--2. on grow -->
+    <!-- 2a. grow view to fit entire screen -->
+
+    <!-- 0. at start -->
+
+    <!-- 0a. make view 50% transparent -->
+
+    <alpha
+
+        android:fromAlpha="1"
+
+        android:toAlpha="0.5"
+
+        android:duration="0"
+
+        />
+
+    <!-- 0b. shrink view by 80% -->
+
+    <scale
+
+        android:fromXScale="100%"
+
+        android:toXScale="80%"
+
+        android:fromYScale="100%"
+
+        android:toYScale="80%"
+
+        android:pivotX="50%"
+
+        android:pivotY="50%"
+
+        android:duration="0"
+
+        />
+
+    <!-- 0c. make the view be inside the screen at half its shorter side -->
+
+    <!-- 1. on move -->
+
+    <!-- 1a. move view from from left to center -->
+
+    <translate
+
+        android:fromXDelta="-50%p"
+
+        android:toXDelta="0%p"
+
+        android:duration="@integer/animation_time_slide_and_shrink"
+
+        />
+
+    <!-- 1b. make the view opaque -->
+
+    <alpha
+
+        android:fromAlpha="0.5"
+
+        android:toAlpha="2"
+
+        android:fillAfter="true"
+
+        android:startOffset="@integer/animation_time_slide_and_shrink"
+
+        android:duration="@integer/animation_time_slide_and_shrink"
+
+        />
+
+    <!--2. on grow -->
+
+    <!-- 2a. grow view to fit entire screen -->
+
+    <scale
+
+        android:fromXScale="100%"
+
+        android:toXScale="125%"
+
+        android:fromYScale="100%"
+
+        android:toYScale="125%"
+
+        android:pivotX="50%"
+
+        android:pivotY="50%"
+
+        android:startOffset="@integer/animation_time_slide_and_shrink"
+
+        android:duration="@integer/animation_time_slide_and_shrink"
+
+        />
+
+</set>
